@@ -1,6 +1,9 @@
-Environment
+System requirements
 python=3.9
 pytorch==1.13.0 cuda==11.7
 GPU=GeForce RTX 3060
+Installation guide
 you can use this command install the pytorch 
+conda create -n myenv python=3.9
 conda install pytorch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 pytorch-cuda=11.7 -c pytorch -c nvidia
+It may take a few minutes.
