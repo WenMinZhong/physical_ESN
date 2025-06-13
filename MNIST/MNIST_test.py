@@ -38,7 +38,6 @@ for i in range(1):
         else:
             print("The matrix does not contain NaN values.")
         torch.save(RA_Train, 'ptype_RA/fashion_RA_train'+"{:.2f}".format(resSize)+'.pt')
-# Wout = torch.matmul(torch.linalg.pinv(torch.matmul(x_noise_train.transpose(0,1),x_noise_train)),torch.matmul(x_noise_train.transpose(0, 1), y_train))
         RA_Test = Echo.reservoir(x_test).to(torch.float64)
         torch.save(RA_Test, 'ptype_RA/fashion_RA_test'+"{:.2f}".format(resSize)+'.pt')
         y_train = torch.tensor(y_train,dtype=torch.float64).to(device)
