@@ -7,3 +7,5 @@ you can use this command install the pytorch
 conda create -n myenv python=3.9
 conda install pytorch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 pytorch-cuda=11.7 -c pytorch -c nvidia
 It may take a few minutes.
+You can use PyCharm or Jupyter Notebook to run the software.  
+The Win file contains reservoir.py and active_func.py in the tanh folder.
